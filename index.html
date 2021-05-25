@@ -5,28 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SrinuPotnuru</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="app.js"></script>
     <!--font-awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <!--bootstrap cdn-->
   </head>
   <body>
-      <div class="row">
-        <div class="col-4">
-            <i id="bulb" class="far fa-lightbulb fa-3x"></i>
-            <span class="far fa-sun" id="nmode"></span>
-          </div>
-          <div class="col-4">
-            <h2 id="name"><b> < Srinu</b> Potnuru <span id="slash">/</span>></h2>
-          </div>
-          
-      </div>
-    
+    <i id="bulb" class="far fa-lightbulb fa-3x"></i>
 
-    <div class="container">
-       div.
-    </div>
+    <!--nav bar-->
+    <header>
+      <div class="cnt">
+        <h1 class="logo">
+          <span id="logo-first"> <i id="slash"><</i> Srinu </span>
+          <span id="logo-last"> Potnuru <i id="slash">/></i></span>
+        </h1>
+
+        <nav class="site-nav">
+          <ul>
+            <li>
+              <a href="#"> <i class="fa fa-home site-nav-icon"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-info site-nav-icon"></i>About</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-briefcase site-nav-icon"></i>Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-envelope site-nav-icon"></i>Contact</a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="far fa-toggle-on" id="nmode"></span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
+    <!--navbar end-->
+    <div class="container"></div>
   </body>
 </html>

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 :root {
   
     --background: rgb(1,22,39);
@@ -9,6 +13,13 @@
       --light-gray: rgb(185,185,185);
       --white: rgb(214, 222, 235);
   
+  }
+  #bulb{
+    display: none;
+  }
+  #nmode{
+    color: var(--white);
+    font-size: 1.3em;
   }
   
   body {
@@ -31,7 +42,213 @@
  
   #name{
     font-family: 'Ubuntu Mono', monospace;
+    float: left;
+
   }
+
   #slash{
       color: red;
   }
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.cnt {
+ 
+  padding-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+header {
+  background: transparent;
+  padding: 1em 0;
+  position: relative;
+}
+
+
+header::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+
+.logo{
+  font-size: 2em;
+}
+.logo #logo-first {                 
+  float: left;                    
+  margin: 0;
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+.logo #logo-last {
+  float: left;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.logo:hover #logo-last {    
+  margin: 0;
+  color: #00b3b3;
+}
+
+.logo:hover #logo-first {    
+  margin: 0;
+  padding-bottom: 20px;
+  color: #f2f2f2;
+}
+
+#slash{
+  color: red;
+}
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  font-weight: 500;
+  height: 0px;
+  overflow: hidden;
+}
+
+.site-nav-open {
+  height: auto;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+.site-nav li {
+  border-bottom: 1px solid #8c8c8c; 
+}
+
+.site-nav li:last-child {    
+  border: none;
+}
+
+.site-nav a {           
+  color: var(--white);
+  display: block;
+  padding: 2em 2em 2em 1.5em; 
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-nav a:hover,        
+.site-nav a:focus {
+  background: #00b3b3;
+  color: #4d4d4d;
+}
+
+
+.site-nav-icon  {
+  display: inline-block;   
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1em;           
+  text-align: right;  
+  color: var(--white);  
+}
+
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 1.7em;
+  right: 1em;
+  cursor: pointer;
+}
+
+
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content:'';
+  display: block;
+  background: #00b3b3;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 2px;
+  transition: all ease-in-out 500ms;
+}
+
+
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+
+.hamburger::after {
+  transform: translateY(4px);
+}
+
+
+.open .hamburger {
+  transform: rotate(45deg);
+  background: #ffc299;
+}
+
+.open .hamburger::before {
+  opacity: 0;            
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+  background: #ffc299;
+}
+
+
+
+
+@media (min-width:700px) {
+
+  .menu-toggle {      
+      display: none;
+  }
+
+  .site-nav {
+      height: auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      font-weight: 300;
+  }
+
+  .site-nav li {              
+      display: inline-block;
+      border: none;
+  }
+
+  .site-nav a {      
+      padding: 0;
+      margin-left: 3em;
+      font-size: 1.5em;
+  }
+
+  .site-nav a:hover,    
+  .site-nav a:focus {       
+      background: transparent;
+      font-weight: 800;
+      color: #00b3b3;
+  }
+
+  .site-nav .site-nav-icon {   
+      display: none;
+  }
+
+}
