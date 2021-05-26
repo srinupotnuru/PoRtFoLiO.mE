@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 html {
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 100%;
+    overflow-x: hidden;
+}
+h1{
+  font-family: 'Ubuntu Mono', monospace;
 }
 :root {
   
@@ -23,6 +31,8 @@ html {
   }
   
   body {
+    max-width: 100%;
+    overflow-x: hidden;
       background: var(--background);
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -30,13 +40,13 @@ html {
       font-size: 100%;
       color: var(--white);
       font-family: 'Roboto', sans-serif;
+      font-weight: 800;
   }
   
   p {
     margin: 30px auto 0;
-    padding: 20px;
-    max-width: 720px;
-    font-size: 120%;
+    
+    font-size: 1.2em;
     text-align: left;
   }
  
@@ -64,9 +74,8 @@ html {
 
 .cnt {
  
+  padding:1.5em;
   padding-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 header {
   background: transparent;
@@ -146,12 +155,30 @@ header::after {
   padding: 2em 2em 2em 1.5em; 
   text-transform: uppercase;
   text-decoration: none;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .site-nav a:hover,        
 .site-nav a:focus {
   background: #00b3b3;
   color: #4d4d4d;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+.fab:hover {
+  opacity: 0.7;
 }
 
 
@@ -251,4 +278,15 @@ header::after {
       display: none;
   }
 
+}
+.containerfluid{
+    padding-top: 3em;
+    padding-left:3em;
+    margin: 0 auto;
+}
+p{
+ 
+  font-weight: 0;
+  font-family: 'KoHo', sans-serif;
+  margin: 0px;
 }
