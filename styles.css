@@ -133,6 +133,8 @@ header::after {
 
 .site-nav-open {
   height: auto;
+  background-color:blanchedalmond;
+  color: var(--white);
 }
 
 .site-nav ul {
@@ -240,7 +242,19 @@ header::after {
 }
 
 
+.containerfluid{
+  padding-top: 3em;
+  padding-left:3em;
+  padding-right: 3em;
+  margin: 0 auto;
+}
+p{
 
+font-weight: 0;
+font-family: 'KoHo', sans-serif;
+margin: 0px;
+font-size: 1.5em;
+}
 
 @media (min-width:700px) {
 
@@ -266,7 +280,7 @@ header::after {
       margin-left: 3em;
       font-size: 1.5em;
   }
-
+  
   .site-nav a:hover,    
   .site-nav a:focus {       
       background: transparent;
@@ -277,16 +291,41 @@ header::after {
   .site-nav .site-nav-icon {   
       display: none;
   }
-
-}
-.containerfluid{
-    padding-top: 3em;
-    padding-left:3em;
-    margin: 0 auto;
-}
-p{
  
-  font-weight: 0;
+ .main{
+   display: none;
+ }
+  
+}
+@media (max-width:700px)
+{
+  
+  .containerfluid{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .site-nav , open, .hamburger{
+    display: none;
+  }
+.lt-2{
+  width: 300px;
+  height: 300px;
+}
+  
+}
+
+.btn{
   font-family: 'KoHo', sans-serif;
-  margin: 0px;
+  background: rgb(77, 0, 150);
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.t2{
+  margin-top:170px ;
+}
+.skills{
+  font-size: 70px;
+margin-left: 30px;
+margin-right: 30px;
 }

@@ -50,6 +50,16 @@ _('nmode').onclick = function() {
   
 }
 
+_('dmode').onclick = function() {
+
+	nightmode = !nightmode;
+	nightRun();
+
+  setTimeout(function(){
+   
+  }, 500);
+  
+}
 function nightRun() {
     
 
