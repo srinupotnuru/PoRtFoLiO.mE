@@ -168,11 +168,12 @@ header::after {
 
 .fab {
   padding: 20px;
-  font-size: 30px;
+  font-size: 40px;
   width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  margin-left: 10px;
   border-radius: 50%;
 }
 
@@ -244,7 +245,7 @@ header::after {
 
 .containerfluid{
   padding-top: 3em;
-  padding-left:3em;
+  padding-left:5em;
   padding-right: 3em;
   margin: 0 auto;
 }
@@ -311,12 +312,19 @@ font-size: 1.5em;
   width: 300px;
   height: 300px;
 }
+.lt-1{
+  width: 500px;
+  height: 500px;
+}
 p{
   font-size: 1.2em;
 }
   
   ul{
     padding-left: 0;
+  }
+  h1{
+    font-size: 2em;
   }
 }
 
@@ -355,8 +363,14 @@ margin-right: 30px;
   padding-left: 20px;
   
 }
+.item2{
+  max-width: 420px;
+  min-height: 500px;
+}
+
 .item:hover {
   box-shadow: 0 20px 20px 0 rgba(0,0,0,0.5);
+  translate: (180deg);
 }
 .title {
   font-size: 1em;
@@ -406,4 +420,16 @@ margin-right: 30px;
 }
 .heading{
   margin-bottom: 1em;
+}
+.works{
+  
+  display: flex;
+    flex-wrap: wrap;
+}
+ul{
+  padding-left:10px;
+}
+footer{
+  text-align: center;
+  margin-top: 2em;
 }
