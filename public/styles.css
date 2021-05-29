@@ -326,6 +326,13 @@ p{
   h1{
     font-size: 2em;
   }
+  .btn-lg{
+    font-size: 1em;
+  }
+  #love{
+    font-size: 1em;
+  }
+  
 }
 
 .btn-lg{
