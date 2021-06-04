@@ -95,3 +95,10 @@ function nightRun() {
 		lastnight = 0;
 	}	
 }
+
+$('html, body').animate (
+	{
+		scrollTop : $(hash).offset().top  - 100
+	},
+	900
+);
