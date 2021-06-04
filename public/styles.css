@@ -78,9 +78,8 @@ h1,h2,h3,h4,h5{
   padding-top: 0px;
 }
 header {
-  background: transparent;
   padding: 1em 0;
-  position: relative;
+  
 }
 
 
@@ -248,6 +247,7 @@ header::after {
   padding-left:5em;
   padding-right: 3em;
   margin: 0 auto;
+  margin-top: 6em;
 }
 p{
 
@@ -335,6 +335,9 @@ p{
   #love{
     font-size: 1em;
   }
+    .logo{
+      font-size: 1.8em;
+    }
   
 }
 
@@ -442,4 +445,14 @@ ul{
 footer{
   text-align: center;
   margin-top: 2em;
+}
+header{
+  position: fixed;
+  overflow: hidden;
+  top: 0%;
+  width: 100%;
+  background: var(--background);
+  background-color: var(--background);
+  z-index: 100;
+
 }
